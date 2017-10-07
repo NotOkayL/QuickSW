@@ -43,25 +43,21 @@ public class QuickSWMod {
         break;
   
       case 1:
-        MINECRAFT.thePlayer.sendChatMessage("/play solo_insane");
+        MINECRAFT.thePlayer.sendChatMessage("/play bedwars_eight_one");
         break;
   
       case 2: 
-        MINECRAFT.thePlayer.sendChatMessage("/play solo_normal");
+        MINECRAFT.thePlayer.sendChatMessage("/play bedwars_eight_two");
         break;
   
       case 3: 
-        MINECRAFT.thePlayer.sendChatMessage("/play teams_insane");
+        MINECRAFT.thePlayer.sendChatMessage("/play bedwars_four_three");
         break;
   
       case 4: 
-        MINECRAFT.thePlayer.sendChatMessage("/play teams_normal");
+        MINECRAFT.thePlayer.sendChatMessage("/play bedwars_four_four");
         break;
-  
-      case 5: 
-        MINECRAFT.thePlayer.sendChatMessage("/play mega_normal");
-        break;
-  
+
       default:
         break;
     }
@@ -84,17 +80,15 @@ public class QuickSWMod {
       return;
     }
     int y = 20;
-    e.buttonList.add(new GuiButton(0, e.gui.width - 75, y, 70, 20, "Ranked"));
+    e.buttonList.add(new GuiButton(0, e.gui.width - 75, y, 70, 20, "Ranked SW"));
     y += 22;
-    e.buttonList.add(new GuiButton(1, e.gui.width - 75, y, 70, 20, "Solo Insane"));
+    e.buttonList.add(new GuiButton(1, e.gui.width - 75, y, 70, 20, "Solo"));
     y += 22;
-    e.buttonList.add(new GuiButton(2, e.gui.width - 75, y, 70, 20, "Solo Normal"));
+    e.buttonList.add(new GuiButton(2, e.gui.width - 75, y, 70, 20, "2v2's"));
     y += 22;
-    e.buttonList.add(new GuiButton(3, e.gui.width - 75, y, 70, 20, "Team Insane"));
+    e.buttonList.add(new GuiButton(3, e.gui.width - 75, y, 70, 20, "3v3's"));
     y += 22;
-    e.buttonList.add(new GuiButton(4, e.gui.width - 75, y, 70, 20, "Team Normal"));
-    y += 22;
-    e.buttonList.add(new GuiButton(5, e.gui.width - 75, y, 70, 20, "Mega"));
+    e.buttonList.add(new GuiButton(4, e.gui.width - 75, y, 70, 20, "4v4's"));
   }
 
   @SubscribeEvent
